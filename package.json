@@ -31,8 +31,10 @@
     "ngx-cookie-service": "^12.0.3",
     "ngx-loading": "^13.0.0",
     "ngx-useful-swiper": "^10.0.1",
+    "npm": "^9.1.2",
     "rxjs": "~6.6.0",
     "save": "^2.4.0",
+    "socket.io-client": "^4.5.4",
     "sweetalert2": "^11.4.4",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
