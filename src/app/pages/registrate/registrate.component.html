@@ -1,9 +1,8 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 align-self-center">
+<div class="container mt-5 mx-auto p-15">
+    <div class="row mx-auto">
+        <div class="col-md-4 align-self-center mx-auto">
             <br />
             <br />
-
             <mat-card>
                 <form class="example-form" [formGroup]="frmRegistrate" (ngSubmit)="Registrar()">
                     <h2 style="text-align: center;">REGISTRATE</h2>
@@ -15,7 +14,6 @@
                             {{ getErrorMsjNombre() }}
                         </mat-error>
                     </mat-form-field>
-
                     <mat-form-field class="ancho" appearance="outline">
                         <mat-label>Apellido</mat-label>
                         <input matInput formControlName="apellido" type="text" autocomplete="off" [errorStateMatcher]="matcher" required />
@@ -73,9 +71,9 @@
             <br />
         </div>
 
-        <div class="col-md-2"></div>
+       <!-- <div class="col-md-2"></div>
         <div class="col-md-6">
           
-        </div>
+        </div>-->
     </div>
 </div>
