@@ -1,0 +1,8 @@
++ ngx-captcha@11.0.0
+updated 1 package and audited 1528 packages in 12.932s
+
+98 packages are looking for funding
+  run `npm fund` for details
+
+found 31 vulnerabilities (3 low, 21 moderate, 7 high)
+  run `npm audit fix` to fix them, or `npm audit` for details

@@ -1,0 +1,78 @@
+.body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    /* background-color:beige ; */
+}
+
+.login {
+    width: 20%;
+    max-width: 80%;
+    text-align: center;
+}
+
+.ancho {
+    width: 100%;
+}
+
+.button {
+    height: 50%;
+}
+
+.spinner {
+    margin: 0 auto;
+}
+
+.example-container .mat-form-field+.mat-form-field {
+    margin-left: 8px;
+}
+
+.example-right-align {
+    text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+}
+
+input.example-right-align {
+    -moz-appearance: textfield;
+}
+
+.span_error {
+    text-align: left;
+    line-height: 1px;
+    font-size: 11px;
+    color: #f44336;
+}
+
+
+/* css contacto */
+
+.card_text {
+    color: rgba(0, 0, 0, .6);
+}
+
+.dark-mode .card_text {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.example-action-buttons {
+    padding-bottom: 20px;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+    flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.example-headers-align .mat-form-field+.mat-form-field {
+    margin-left: 8px;
+}

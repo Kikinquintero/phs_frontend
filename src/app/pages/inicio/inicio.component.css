@@ -1,0 +1,40 @@
+.categoria_img {
+    display: block;
+    margin-left: 0;
+    width: 232px;
+    height: 284px;
+    object-fit: cover;
+}
+
+.categoriatitulo {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: .0125em;
+    line-height: 2rem;
+    word-break: break-all;
+    margin-top: 5px;
+}
+
+.texth2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.agrandar:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.7s ease 0.1s
+}
+
+a {
+    text-decoration: none
+}

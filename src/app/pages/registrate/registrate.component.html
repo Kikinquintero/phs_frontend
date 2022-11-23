@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 align-self-center">
+            <br />
+            <br />
+
+            <mat-card>
+                <form class="example-form" [formGroup]="frmRegistrate" (ngSubmit)="Registrar()">
+                    <h2 style="text-align: center;">REGISTRATE</h2>
+                    <!-- <h2 style="text-align: center;">Únete ahora</h2> -->
+                    <mat-form-field class="ancho" appearance="outline">
+                        <mat-label>Nombre</mat-label>
+                        <input matInput formControlName="nombre" type="text" autocomplete="off" [errorStateMatcher]="matcher" required />
+                        <mat-error *ngIf="nombre?.invalid">
+                            {{ getErrorMsjNombre() }}
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="ancho" appearance="outline">
+                        <mat-label>Apellido</mat-label>
+                        <input matInput formControlName="apellido" type="text" autocomplete="off" [errorStateMatcher]="matcher" required />
+                        <mat-error *ngIf="apellido?.invalid">
+                            {{ getErrorMsjApellido() }}
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="ancho" appearance="outline">
+                        <mat-label>Correo</mat-label>
+                        <input matInput formControlName="email" type="email" autocomplete="off" [errorStateMatcher]="matcher" required />
+                        <mat-icon matSuffix>email</mat-icon>
+                        <mat-error *ngIf="email?.invalid">
+                            {{ getErrorMsjEmail() }}
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="ancho mat" appearance="outline">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput formControlName="password" type="password" [type]="hide ? 'password' : 'text'" autocomplete="off" [errorStateMatcher]="matcher" required />
+                        <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                            <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+                        </button>
+                        <mat-error *ngIf="password?.invalid">
+                            {{ getErrorMsjPassword() }}
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="ancho" appearance="outline">
+                        <mat-label>Confirmar Contraseña</mat-label>
+                        <input matInput formControlName="confirmarPassword" type="password" [type]="hide2 ? 'password' : 'text'" placeholder="" [errorStateMatcher]="matcher" required />
+                        <button type="button" mat-icon-button matSuffix (click)="hide2 = !hide2" [attr.aria-label]="'Hide2 password'" [attr.aria-pressed]="hide2">
+                            <mat-icon>{{ hide2 ? 'visibility_off' : 'visibility' }}</mat-icon>
+                        </button>
+                        <mat-error *ngIf="confirmarPassword?.invalid">
+                            {{ getErrorMsjConfirmarPassword() }}
+                        </mat-error>
+                    </mat-form-field>
+
+                    <div class="">
+                        <mat-progress-bar *ngIf="loading" color="primary" mode="indeterminate"></mat-progress-bar>
+                        <button type="submit" class="ancho button" mat-raised-button color="accent" [disabled]="frmRegistrate.invalid || clickEnviar">
+                            {{ txtboton }}
+                        </button>
+                    </div>
+
+                    <br />
+                </form>
+            </mat-card>
+
+            
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+          
+        </div>
+    </div>
+</div>

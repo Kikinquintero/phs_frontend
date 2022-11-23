@@ -1,0 +1,78 @@
+.example-form {
+    width: 100%;
+}
+
+.ancho {
+    width: 100%;
+}
+
+.button {
+    height: 50%;
+}
+
+.span_error {
+    text-align: left;
+    line-height: 12px;
+    hyphens: auto;
+    /* font-size: 11px; */
+    /* color: #f44336; */
+}
+
+
+/* mat-form-field.ng-invalid.ng-touched {
+    animation: bigger;
+    animation-duration: 0.3s;
+    margin-bottom: 17px;
+} */
+
+@keyframes bigger {
+    from {
+        margin-bottom: 0;
+    }
+    to {
+        margin-bottom: 17px;
+    }
+}
+
+mat-form-field.ng-invalid.ng-dirty {
+    animation: bigger;
+    animation-duration: 0.3s;
+    margin-bottom: 17px;
+}
+
+
+/* mat-form-field.ng-invalid.ng-touched {
+    animation: smaller;
+    animation-duration: 0.3s;
+    margin-bottom: 0px;
+} */
+
+@keyframes smaller {
+    from {
+        margin-bottom: 17px;
+    }
+    to {
+        margin-bottom: 0;
+    }
+}
+
+mat-form-field.ng-valid.ng-dirty {
+    animation: smaller;
+    animation-duration: 0.3s;
+    margin-bottom: 0px;
+}
+
+mat-form-field.ng-valid.ng-touched {
+    animation: smaller2;
+    animation-duration: 0.3s;
+    margin-bottom: 0px;
+}
+
+@keyframes smaller2 {
+    from {
+        margin-bottom: 17px;
+    }
+    to {
+        margin-bottom: 0;
+    }
+}

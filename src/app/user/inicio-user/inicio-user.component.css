@@ -1,0 +1,14 @@
+.example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+}
+
+.btnUser {
+    width: 100%;
+    text-align: left;
+}
+
+.active {
+    /* background: salmon */
+    background: #ffe100
+}

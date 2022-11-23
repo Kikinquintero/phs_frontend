@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cine</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!-- sweetalert js -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- chatbot -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //To minimise the height of chatbox
+        // $(document).ready(function() {
+        //     window.addEventListener('dfMessengerLoaded', function(event) {
+        //         $r1 = document.querySelector("df-messenger");
+        //         $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
+        //         $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input"); //for other mods
+        //         var sheet = new CSSStyleSheet;
+        //         // manage box height from here
+        //         sheet.replaceSync(`div.chat-wrapper[opened="true"] { height: 450px }`);
+        //         $r2.shadowRoot.adoptedStyleSheets = [sheet];
+        //     });
+        // });
+    </script>
+
+    <!-- swiper carrucel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- icon fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" <!-- modo nocturno js -->
+
+    <link rel="stylesheet" href="./assets/css/loading.css">
+
+
+
+
+</head>
+
+<body class="mat-typography">
+    <app-root>
+
+        <div class="cargacomponentes">
+            <div class="loader ">
+                <!-- <div> -->
+
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__ball"></div>
+
+                <!-- </div>
+                <div class="loader_description">Cargando...</div> -->
+            </div>
+
+
+        </div>
+
+    </app-root>
+</body>
+
+
+
+
+
+</html>

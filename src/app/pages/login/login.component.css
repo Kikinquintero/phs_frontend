@@ -1,0 +1,80 @@
+.login {
+    width: 20%;
+    max-width: 70%;
+    text-align: center;
+}
+
+.ancho {
+    width: 100%;
+    /* position: relative; */
+}
+
+.button {
+    height: 70%;
+}
+
+.spinner {
+    margin: 0 auto;
+}
+
+
+/* frmLogin */
+
+.span_error {
+    text-align: left;
+    line-height: 1px;
+    font-size: 11px;
+    color: #f44336;
+}
+
+@keyframes bigger {
+    from {
+        margin-bottom: 0;
+    }
+    to {
+        margin-bottom: 17px;
+    }
+}
+
+mat-form-field.ng-invalid.ng-dirty {
+    animation: bigger;
+    animation-duration: 0.3s;
+    margin-bottom: 17px;
+}
+
+
+/* mat-form-field.ng-invalid.ng-touched {
+    animation: smaller;
+    animation-duration: 0.3s;
+    margin-bottom: 0px;
+} */
+
+@keyframes smaller {
+    from {
+        margin-bottom: 17px;
+    }
+    to {
+        margin-bottom: 0;
+    }
+}
+
+mat-form-field.ng-valid.ng-dirty {
+    animation: smaller;
+    animation-duration: 0.3s;
+    margin-bottom: 0px;
+}
+
+mat-form-field.ng-valid.ng-touched {
+    animation: smaller2;
+    animation-duration: 0.3s;
+    margin-bottom: 0px;
+}
+
+@keyframes smaller2 {
+    from {
+        margin-bottom: 17px;
+    }
+    to {
+        margin-bottom: 0;
+    }
+}

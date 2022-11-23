@@ -1,0 +1,42 @@
+<div id="page">
+
+
+    <header>
+
+        <mat-toolbar color="accent" id="idnavbar" style="position:sticky; top: 0">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        </button>
+            <span></span>
+            <span> Enrique HH<img src="" alt="" class="logo"> </span > 
+          <span class="example-spacer"></span>
+            <div class="d-flex justify-content-center px-5">
+
+            </div>
+
+            <span class="example-spacer"></span>
+         
+            <button mat-button *ngIf="logueado" [routerLink]="[ '/user/perfil']">
+              <mat-icon>account_circle</mat-icon>
+            </button>
+
+            <button mat-button color="" *ngIf="!logueado" [routerLink]="[ '/login']">Iniciar sesión</button>
+            <button mat-button color="" *ngIf="!logueado" [routerLink]="[ '/registro']">Regístrate</button>
+
+            <button mat-flat-button color="primary" (click)="cerrarSesion()" *ngIf="logueado">
+              <mat-icon>logout</mat-icon>   Cerrar sesión
+          </button>
+        </mat-toolbar>
+
+    </header>
+
+
+
+    <router-outlet>
+        <br><br><br>
+
+    </router-outlet>
+    <br><br><br><br><br><br><br><br><br>
+
+
+
+</div>

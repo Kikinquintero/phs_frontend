@@ -1,0 +1,209 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+/* .example-spacer { */
+
+
+/* flex: 1 1 auto; */
+
+
+/* } */
+
+.container-btn-mode {
+    position: fixed;
+    /* position: sticky; */
+    top: 70px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 0;
+    /* font-size: 14px;
+    padding: 12px 20px;
+    bottom: 20px;
+    right: 20px; */
+}
+
+.btn-mode {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    transition: background-color .5s;
+}
+
+.btn-mode i {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.btn-mode.sun {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid transparent;
+}
+
+.btn-mode.moon {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.active2 {
+    background-color: black;
+    color: #ffcd5c !important;
+}
+
+
+/* modo oscuro */
+
+.dark-mode {
+    background-color: #0e0e0e;
+    transition: background-color .5s;
+}
+
+.dark-mode .card {
+    background-color: #1A1C1E;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode .card_text,
+.dark-mode .btn-contact {
+    color: white;
+}
+
+.dark-mode .btn-mode {
+    background-color: #1A1C1E;
+    border: 1px solid white;
+    color: white;
+}
+
+.dark-mode .swiper-slide {
+    /* background-color: #1A1C1E; */
+}
+
+.dark-mode form {
+    /* background-color: #443d3d0c; */
+}
+
+.dark-mode mat-card {
+    background-color: #2a2424;
+}
+
+
+/* .dark-mode mat-step {
+    background-color: #0e0e0e;
+    color: #fff;
+} */
+
+.dark-mode mat-card-title {
+    color: white;
+}
+
+.dark-mode mat-label {
+    color: hsla(0, 0%, 100%, .7);
+}
+
+.dark-mode mat-form-field {
+    color: white;
+}
+
+.dark-mode input {
+    background-color: #2a2424;
+    color: white;
+}
+
+.dark-mode .titlecarrucel {
+    color: white;
+}
+
+.dark-mode .categoriatitulo {
+    color: white;
+}
+
+.dark-mode mat-divider {
+    background-color: rgb(172, 153, 153);
+}
+
+.dark-mode mat-accordion p {
+    color: #2a2424;
+}
+
+.dark-mode .search {
+    /* background-color: rgba(255, 255, 255, 0.897); */
+}
+
+.dark-mode .welcomeblack {
+    background-color: #2a2424;
+}
+
+.dark-mode .footerblack {
+    background-color: #2a2424;
+}
+
+.dark-mode .navbarblack {
+    background-color: #2a2424;
+}
+
+.dark-mode .texth2 {
+    color: #000000;
+}
+
+
+/* scrolltop */
+
+a.scroll-top {
+    color: #fff;
+    display: none;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 50px;
+    /* right: 30px; */
+    left: 30px;
+    font-size: 20px;
+    background: #222;
+    border-radius: 3px !important;
+    text-align: center;
+    border: 1px solid hsla(0, 0%, 78%, 0.3)
+}
+
+a.scroll-top i {
+    position: relative;
+    top: 2px;
+}
+
+.enlaceBreadcrum {
+    text-decoration: none;
+    color: #7a7676!important
+}
+
+.breadcrumb {
+    background-color: #ffffff00!important;
+}
+
+.breadcrumb a {
+    background-color: #ffffff00!important;
+    text-decoration: none;
+    color: #7a7676!important
+}
+
+.breadcrumb-item {
+    text-decoration: none;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

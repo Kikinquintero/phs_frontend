@@ -1,0 +1,67 @@
+<!-- <app-navbar> </app-navbar> -->
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-4 align-self-center ">
+
+
+            <mat-card>
+                <form [formGroup]="frmLogin" (ngSubmit)="Ingresar()">
+
+                    <h2 style="text-align: center; ">Iniciar sesión</h2>
+
+                    <mat-form-field class="ancho" appearance="outline">
+                        <mat-label>Correo electrónico</mat-label>
+                        <input matInput formControlName="email" type="email" placeholder="" autocomplete="off" [errorStateMatcher]="matcher" required>
+                        <mat-icon matSuffix>email</mat-icon>
+                        <mat-error *ngIf="email?.invalid">
+                            {{ getErrorMsjEmail() }}
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="ancho" appearance="outline">
+                        <mat-label>Contraseña </mat-label>
+                        <input matInput formControlName="password" type="password" [type]="hide ? 'password' : 'text'" autocomplete="off" [errorStateMatcher]="matcher" required>
+
+                        <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                       </button>
+                        <mat-error *ngIf="password?.invalid">
+                            {{ getErrorMsjPassword() }}
+                        </mat-error>
+                    </mat-form-field>
+
+                    <div class="">
+                        <mat-progress-bar *ngIf="loading" color="primary" mode="indeterminate"></mat-progress-bar>
+                        <button type="submit" class="ancho button" mat-raised-button color="accent" [disabled]="frmLogin.invalid || clickEnviar">{{txtboton}}
+                        </button>
+                    </div>
+
+                    <br>
+
+                    <div style="text-align: center;">
+                        <p>¿No tienes una cuenta?
+                            <button mat-button color="primary" [routerLink]="[ '/registro']">Regístrate</button>
+                        </p>
+                    </div>
+                    <br>
+                </form>
+                <div></div>
+              
+            </mat-card>
+
+
+            <br><br><br>
+
+        </div>
+
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+
+
+        </div>
+    </div>
+
+</div>
