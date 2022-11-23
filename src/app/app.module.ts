@@ -28,7 +28,7 @@ import { AuthInterceptor } from './services/auth.interceptor';
 import { UserGuardGuard } from './user-guard.guard';
 
 import { PerfilComponent } from './components/perfil/perfil.component';
-import { InicioUserComponent } from './user/inicio-user/inicio-user.component';
+import { InicioUserComponent } from './components/inicio-user/inicio-user.component';
 import { ChatComponent } from './user/chat/chat.component';
 
 

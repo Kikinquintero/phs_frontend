@@ -14,6 +14,8 @@ export class User {
 export class InicioUserComponent implements OnInit {
 
   UserProfile ?: User;
+  rutaLogueado= '';
+  rol: any;
 
   constructor(
     public authService: AuthService
@@ -21,7 +23,14 @@ export class InicioUserComponent implements OnInit {
     this.authService.profileUser().subscribe((data:any) => {
       this.UserProfile = data;
     })
+
+    this.rutaLogueado = localStorage.getItem('route');
+    this.rol = localStorage.getItem('rol');
+
   }
   ngOnInit(): void {
+    // print(this.rutaLogueado);
+    console.log(this.rutaLogueado)
+    console.log(this.rol)
   }
 }

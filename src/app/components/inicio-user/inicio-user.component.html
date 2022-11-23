@@ -6,10 +6,10 @@
             <br><br>
             <mat-card class="example-card">
                
-                <button class="btnUser" mat-button routerLinkActive="active" color="" [routerLink]="[ '/user/perfil']">
+                <button class="btnUser" mat-button routerLinkActive="active" color=""   routerLink='/{{rutaLogueado}}/perfil'>
                     <mat-icon>person</mat-icon>   Perfil
                 </button>
-                <button class="btnUser" mat-button routerLinkActive="active" color="" [routerLink]="[ '/user/chat']">
+                <button class="btnUser" mat-button routerLinkActive="active" color="" *ngIf="rol ==3" routerLink='/{{rutaLogueado}}/chat'>
                     <mat-icon>chat</mat-icon>   Chatear
                 </button>
              

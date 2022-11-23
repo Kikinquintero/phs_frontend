@@ -5,7 +5,7 @@ import { UserGuardGuard } from './user-guard.guard';
 
 
 
-import { InicioUserComponent } from './user/inicio-user/inicio-user.component';
+import { InicioUserComponent } from './components/inicio-user/inicio-user.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistrateComponent } from './pages/registrate/registrate.component';
@@ -20,22 +20,12 @@ const routes: Routes = [
     { path: 'registro', component:RegistrateComponent},
   
   
-  
-    // { path: 'vendedor', component:InicioVendedorComponent, canActivate: [UserGuardGuard],
-    //    children:[
-  
-    //       { path: 'crear', component:CreateComponent, canActivate: [UserGuardGuard]},
-    //        ]
-    // },
-  
-  
-  
     { path: 'user', component:InicioUserComponent, canActivate: [UserGuardGuard],
     children:[
   
-      { path: 'perfil', component:PerfilComponent, canActivate: [UserGuardGuard]},
-      { path: 'chat', component:ChatComponent, canActivate: [UserGuardGuard]},
-    ]
+       { path: 'perfil', component:PerfilComponent, canActivate: [UserGuardGuard]},
+       { path: 'chat', component:ChatComponent, canActivate: [UserGuardGuard]},
+     ]
    },
   
 
@@ -43,11 +33,18 @@ const routes: Routes = [
    children:[
  
      { path: 'perfil', component:PerfilComponent, canActivate: [UserGuardGuard]},
-     { path: 'chat', component:ChatComponent, canActivate: [UserGuardGuard]},
+    //  { path: 'chat', component:ChatComponent, canActivate: [UserGuardGuard]},
    ]
   },
+
+  { path: 'sa', component:InicioUserComponent, canActivate: [UserGuardGuard],
+  children:[
+
+    { path: 'perfil', component:PerfilComponent, canActivate: [UserGuardGuard]},
+   //  { path: 'chat', component:ChatComponent, canActivate: [UserGuardGuard]},
+  ]
+ },
   
-    // { path: 'profile', component:UserProfileComponent, canActivate: [UserGuardGuard]},
   
   
   

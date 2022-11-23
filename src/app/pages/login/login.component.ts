@@ -85,18 +85,26 @@ export class LoginComponent implements OnInit {
         // descomentar
       this.saveToken(result);
       console.log(result);
-      localStorage.setItem('rol',result['user']['rol'])
+      localStorage.setItem('rol',result['user']['rol_id'])
 
-      if (localStorage.getItem('rol') =='Usuario') {
-        console.log('usauooo')
-        this.router.navigate(['user']);
-
-      }
-      if (localStorage.getItem('rol') =='SA') {
+      if (localStorage.getItem('rol') =='1') {
         console.log('SA')
-        this.router.navigate(['user']);
-
+        localStorage.setItem('route','sa')
+        this.router.navigate(['sa/perfil']);
       }
+
+      if (localStorage.getItem('rol') =='2') {
+        console.log('Admin')
+        localStorage.setItem('route','admin')
+        this.router.navigate(['admin/perfil']);
+      }
+
+      if (localStorage.getItem('rol') =='3') {
+        console.log('usuario')
+        localStorage.setItem('route','user')
+        this.router.navigate(['user/perfil']);
+      }
+
 
 
       },

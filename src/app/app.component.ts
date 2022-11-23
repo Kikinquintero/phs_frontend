@@ -17,6 +17,8 @@ export class AppComponent {
   title = 'modasjenl';
 
   logueado: boolean;
+   
+
   
   constructor( 
 
@@ -39,6 +41,9 @@ ngOnInit() {
         this.cerrarSesion
       }
   });
+
+
+
 }
 
 
