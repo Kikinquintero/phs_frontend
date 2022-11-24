@@ -11,6 +11,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegistrateComponent } from './pages/registrate/registrate.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { ChatComponent } from './user/chat/chat.component';
+import { InfoUsersComponent } from './components/info-users/info-users.component';
 
 
 const routes: Routes = [
@@ -33,7 +34,7 @@ const routes: Routes = [
    children:[
  
      { path: 'perfil', component:PerfilComponent, canActivate: [UserGuardGuard]},
-    //  { path: 'chat', component:ChatComponent, canActivate: [UserGuardGuard]},
+     { path: 'info-users', component:InfoUsersComponent, canActivate: [UserGuardGuard]},
    ]
   },
 
@@ -41,7 +42,7 @@ const routes: Routes = [
   children:[
 
     { path: 'perfil', component:PerfilComponent, canActivate: [UserGuardGuard]},
-   //  { path: 'chat', component:ChatComponent, canActivate: [UserGuardGuard]},
+    { path: 'info-users', component:InfoUsersComponent, canActivate: [UserGuardGuard]},
   ]
  },
   

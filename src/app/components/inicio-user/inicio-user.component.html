@@ -9,6 +9,9 @@
                 <button class="btnUser" mat-button routerLinkActive="active" color=""   routerLink='/{{rutaLogueado}}/perfil'>
                     <mat-icon>person</mat-icon>   Perfil
                 </button>
+                <button class="btnUser" mat-button routerLinkActive="active" color=""  *ngIf="rol ==1 || rol==2" routerLink='/{{rutaLogueado}}/info-users'>
+                    <mat-icon>person</mat-icon>   Info Users
+                </button>
                 <button class="btnUser" mat-button routerLinkActive="active" color="" *ngIf="rol ==3" routerLink='/{{rutaLogueado}}/chat'>
                     <mat-icon>chat</mat-icon>   Chatear
                 </button>

@@ -17,6 +17,8 @@ export class AppComponent {
   title = 'modasjenl';
 
   logueado: boolean;
+
+  rutaLogueado= '';
    
 
   
@@ -28,7 +30,7 @@ export class AppComponent {
   
     )
 {
-  // this._cargaScripsService.Carga(["modooscuro"])    ;
+  this.rutaLogueado = localStorage.getItem('route');
 }
 
 public allProduct = [];
